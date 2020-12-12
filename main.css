@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(48, 49, 54);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 72px;
+    color: #e2c624;
+}
+
+p {
+    font-size: 24px;
+    color: #f2f2f2;
+}
+
+.coins {
+    width: 400px;
+    min-height: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid #756719;
+    background-color: #e2c624;
+}
