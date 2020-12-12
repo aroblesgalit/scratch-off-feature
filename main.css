@@ -36,6 +36,24 @@ p {
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    border: 2px solid #756719;
+    /* border: 2px solid #756719; */
     background-color: #e2c624;
+    overflow: hidden;
+    background-blend-mode: difference;
+    background-size: 100px 100px;
+    position: relative;
+}
+
+.scratch {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/gold_bars.png");
+    background-size: 100px 100px;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    pointer-events: none;
+    border-radius: 10px;
 }
