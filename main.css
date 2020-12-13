@@ -32,28 +32,43 @@ p {
     justify-content: space-between;
 }
 
-.coin {
+.coin1,
+.coin2,
+.coin3 {
     height: 100px;
     width: 100px;
     border-radius: 50px;
     /* border: 2px solid #756719; */
     background-color: #e2c624;
     overflow: hidden;
-    background-blend-mode: difference;
-    background-size: 100px 100px;
+    /* background-blend-mode: difference; */
+    /* background-size: 100px 100px; */
     position: relative;
 }
 
-.scratch {
+.scratch1,
+.scratch2,
+.scratch3 {
     display: block;
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url("https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/gold_bars.png");
     background-size: 100px 100px;
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-position: center;
     pointer-events: none;
     border-radius: 10px;
+}
+
+.scratch1 {
+    background-image: url("https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/gold_bars.png");
+}
+
+.scratch2 {
+    background-image: url("https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/gold_bars.png");
+}
+
+.scratch3 {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/61V2cX4JqGL.png");
 }

@@ -12,30 +12,50 @@
     <h1>Bonus</h1>
     <p>Scratch off the 3 coins to see what you've won!</p>
     <div class="coins">
-        <div class="coin"></div>
-        <div class="coin"></div>
-        <div class="coin"></div>
+        <div class="coin1">
+            <!-- <span class="scratch"></span> -->
+        </div>
+        <div class="coin2"></div>
+        <div class="coin3"></div>
     </div>
 </body>
 
 <script>
-    const coins = document.querySelectorAll('.coin');
     let isDown = false;
 
-    coins.forEach(coin => coin.addEventListener('mousedown', () => isDown = true));
-
-    coins.forEach(coin => coin.addEventListener('mousemove', function (e) {
+    // Coin 1
+    const coin1 = document.querySelector('.coin1');
+    coin1.addEventListener('mousemove', function (e) {
         if (isDown === false) return;
         const span = document.createElement('span');
-        span.classList.add('scratch');
+        span.classList.add('scratch1');
         span.style.left = e.offsetX + 'px';
         span.style.top = e.offsetY + 'px';
         this.appendChild(span);
-    }))
+    });
+    // Coin 2
+    const coin2 = document.querySelector('.coin2');
+    coin2.addEventListener('mousemove', function (e) {
+        if (isDown === false) return;
+        const span = document.createElement('span');
+        span.classList.add('scratch2');
+        span.style.left = e.offsetX + 'px';
+        span.style.top = e.offsetY + 'px';
+        this.appendChild(span);
+    });
+    // Coin 3
+    const coin3 = document.querySelector('.coin3');
+    coin3.addEventListener('mousemove', function (e) {
+        if (isDown === false) return;
+        const span = document.createElement('span');
+        span.classList.add('scratch3');
+        span.style.left = e.offsetX + 'px';
+        span.style.top = e.offsetY + 'px';
+        this.appendChild(span);
+    });
 
-    document.addEventListener('mouseup', () => {
-        isDown = false;
-    })
+    document.addEventListener('mouseup', () => isDown = false);
+    document.addEventListener('mousedown', () => isDown = true);
 </script>
 
 </html>
