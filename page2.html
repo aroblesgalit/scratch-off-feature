@@ -30,6 +30,27 @@
         <div class="promo-code"></div>
         <a href="http://jennamolby.com" target="_blank" class="btn">Register Now</a>
     </div>
+
+
+    <script type="text/javascript" src="./wScratchPad.min.js"></script>
+    <script>
+        let promoCode = '';
+        const bg1 = 'https://jennamolby.com/scratch-and-win/images/400.png';
+        const bg2 = 'https://jennamolby.com/scratch-and-win/images/500.png';
+        const bg3 = 'https://jennamolby.com/scratch-and-win/images/sorry.png';
+
+        // Randomaize an image and get promo code accordingly
+        const bgArray = [bg1, bg2, bg3];
+        const selectBG = bgArray[Math.floor(Math.round() * bgArray.length)];
+        if (selectBG == bg1) {
+            promoCode = 'SCRATCH400';
+        } else if (selectBG == bg2) {
+            promoCode = 'SCRATCH500';
+        } else {
+            promoCode = '';
+        }
+
+    </script>
 </body>
 
 </html>
