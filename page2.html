@@ -34,7 +34,7 @@
         <a href="http://jennamolby.com" target="_blank" class="btn">Register Now</a>
     </div>
 
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://jennamolby.com/scratch-and-win/js/wScratchPad.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -67,7 +67,7 @@
                     if ((percent > 50) && (promoCode != '')) {
                         $('.promo-container').show();
                         $('body').removeClass('not-selectable');
-                        $('promo-code').html('Your code is: ' + promoCode);
+                        $('.promo-code').html('Your code is: ' + promoCode);
                     }
                 }
             })
